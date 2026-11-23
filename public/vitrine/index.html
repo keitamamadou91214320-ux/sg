@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lycée Prosper Kamara — Site Vitrine Public</title>
+  <meta
+    name="description"
+    content="Site vitrine officiel du Lycée Prosper Kamara : présentation de l'établissement, filières scientifiques et littéraires, vie scolaire et accès au portail interactif."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- TOP NAVIGATION BAR (3 ZONES STRICTES) -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#accueil" class="brand" id="school-brand">LYCÉE PROSPER KAMARA</a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#presentation">Présentation</a>
+        <a href="#filieres">Filières</a>
+        <a href="#infrastructures">Cadre d’étude</a>
+        <a href="#vie-scolaire">Vie scolaire</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a href="../?portail=login" class="btn-primary">
+          <span>Espace Connexion</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Ouvrir le menu"
+        >
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#presentation">Présentation</a>
+      <a href="#filieres">Filières &amp; Séries</a>
+      <a href="#infrastructures">Cadre d’étude</a>
+      <a href="#vie-scolaire">Vie scolaire &amp; Calendrier</a>
+      <a href="#contact">Contact &amp; Renseignements</a>
+      <a href="../?portail=register" class="mobile-register">Pré-inscription Élève / Parent →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="section-border">
+      <div class="container hero-wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="kicker" id="hero-kicker">Établissement Secondaire Général · Année scolaire 2026-2027</p>
+            <h1 class="hero-title">Exigence académique, rigueur scientifique et avenir préparé.</h1>
+            <p class="hero-lead">
+              Le Lycée Prosper Kamara forme les élèves de la Seconde à la Terminale dans un environnement
+              structuré, discipliné et transparent pour les familles — entre tradition pédagogique et suivi
+              numérique certifié.
+            </p>
+            <div class="hero-actions">
+              <a href="../?portail=login" class="btn-primary btn-lg">Accéder à mon espace interactif →</a>
+              <a href="../?portail=register" class="btn-secondary btn-lg">Inscription Élève / Parent</a>
+            </div>
+            <p class="hero-meta">
+              <span id="school-motto">Excellence · Discipline · Réussite</span>
+              <span>·</span>
+              <a href="../" class="inline-link">Ouvrir la version portail complète</a>
+            </p>
+          </div>
+
+          <figure class="media-figure">
+            <div class="media-frame ratio-16-9">
+              <img
+                src="./assets/hero_campus.jpg"
+                alt="Cour d'honneur et bâtiments principaux du Lycée Prosper Kamara"
+              />
+            </div>
+            <figcaption class="media-caption">
+              <span>Cour centrale &amp; galeries d’enseignement</span>
+              <span class="mono tabular" id="caption-year">2026-2027</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="kpi-strip">
+          <div class="kpi-item">
+            <p class="kpi-val mono tabular">94,2 %</p>
+            <p class="kpi-label">Réussite au Baccalauréat</p>
+          </div>
+          <div class="kpi-item">
+            <p class="kpi-val mono tabular" id="kpi-classes">3 séries</p>
+            <p class="kpi-label">Terminale S1 · Première L2 · Seconde A</p>
+          </div>
+          <div class="kpi-item">
+            <p class="kpi-val mono tabular" id="kpi-subjects">8 disciplines</p>
+            <p class="kpi-label">Sciences, Lettres &amp; Informatique</p>
+          </div>
+          <div class="kpi-item">
+            <p class="kpi-val mono tabular">100 %</p>
+            <p class="kpi-label">Bulletins signés &amp; horodatés</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 · PRÉSENTATION -->
+    <section id="presentation" class="section-surface section-border">
+      <div class="container section-pad">
+        <div class="split-12">
+          <div class="col-5">
+            <p class="kicker">01 · Mot du Proviseur &amp; Projet Éducatif</p>
+            <h2 class="section-title">Une maison d’étude fondée sur le travail régulier et le mérite.</h2>
+            <p class="mono welcome-note" id="welcome-banner">
+              Bienvenue sur le portail scolaire officiel du Lycée Prosper Kamara — Année scolaire 2026-2027.
+            </p>
+          </div>
+          <div class="col-7">
+            <blockquote class="proviseur-quote">
+              « Former l’esprit critique, transmettre la rigueur scientifique et cultiver le respect mutuel :
+              telle est la promesse quotidienne de notre équipe pédagogique envers chaque élève et sa famille. »
+            </blockquote>
+            <p class="quote-author">M. Amadou Bah — Proviseur du Lycée Prosper Kamara</p>
+
+            <div class="pillars-grid">
+              <div class="pillar">
+                <h3>Encadrement continu</h3>
+                <p>Devoirs surveillés hebdomadaires, compositions trimestrielles et conseils de classe individualisés.</p>
+              </div>
+              <div class="pillar">
+                <h3>Transparence certifiée</h3>
+                <p>Chaque bulletin publié est contrôlé par le secrétariat, signé par le proviseur et vérifié par le censeur.</p>
+              </div>
+              <div class="pillar">
+                <h3>Dialogue familles</h3>
+                <p>Consultation en ligne des emplois du temps, devoirs à rendre, reçus de scolarité et bulletins PDF.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · FILIÈRES -->
+    <section id="filieres" class="section-border">
+      <div class="container section-pad">
+        <div class="section-head-row">
+          <div>
+            <p class="kicker">02 · Filières &amp; Programmes d’Étude</p>
+            <h2 class="section-title">Parcours du second cycle adaptés aux vocations.</h2>
+          </div>
+
+          <div class="tab-group" role="tablist" aria-label="Filtrer les filières">
+            <button type="button" class="tab-btn active" data-track="toutes" role="tab" aria-selected="true">
+              Toutes les séries
+            </button>
+            <button type="button" class="tab-btn" data-track="S1" role="tab" aria-selected="false">
+              Terminale S1
+            </button>
+            <button type="button" class="tab-btn" data-track="L2" role="tab" aria-selected="false">
+              Première L2
+            </button>
+            <button type="button" class="tab-btn" data-track="A" role="tab" aria-selected="false">
+              Seconde A
+            </button>
+          </div>
+        </div>
+
+        <div class="tracks-grid" id="tracks-grid">
+          <article class="track-card" data-track-card="S1">
+            <div>
+              <p class="track-meta mono tabular">Cycle Terminal · Baccalauréat S1 · 32 h / semaine</p>
+              <h3 class="track-name">Terminale S1 · Sciences</h3>
+              <p class="track-sub">Série Scientifique (Mathématiques &amp; Physique)</p>
+              <p class="track-desc">
+                Préparation rigoureuse aux études supérieures d’ingénierie, de médecine, de mathématiques appliquées
+                et de recherche scientifique par la pratique expérimentale.
+              </p>
+              <div class="coef-block">
+                <p class="coef-title">Dominantes &amp; Coefficients</p>
+                <ul class="coef-list">
+                  <li><span>Mathématiques</span><span class="mono tabular">Coef. 5</span></li>
+                  <li><span>Physique-Chimie</span><span class="mono tabular">Coef. 5</span></li>
+                  <li><span>Sciences de la Vie et de la Terre</span><span class="mono tabular">Coef. 4</span></li>
+                  <li><span>Français &amp; Philosophie</span><span class="mono tabular">Coef. 3 · 2</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="track-footer">
+              <strong>Débouchés :</strong> Classes préparatoires, facultés de médecine, écoles polytechniques.
+            </p>
+          </article>
+
+          <article class="track-card" data-track-card="L2">
+            <div>
+              <p class="track-meta mono tabular">Cycle Première · Baccalauréat L2 · 30 h / semaine</p>
+              <h3 class="track-name">Première L2 · Lettres &amp; Sciences Humaines</h3>
+              <p class="track-sub">Série Littéraire &amp; Humanités Classiques</p>
+              <p class="track-desc">
+                Maîtrise approfondie de l’expression écrite, de l’argumentation philosophique, de l’analyse
+                historique et des langues vivantes pour les carrières juridiques et diplomatiques.
+              </p>
+              <div class="coef-block">
+                <p class="coef-title">Dominantes &amp; Coefficients</p>
+                <ul class="coef-list">
+                  <li><span>Français &amp; Littérature</span><span class="mono tabular">Coef. 4</span></li>
+                  <li><span>Philosophie</span><span class="mono tabular">Coef. 4</span></li>
+                  <li><span>Histoire-Géographie</span><span class="mono tabular">Coef. 4</span></li>
+                  <li><span>Langues Vivantes (Anglais)</span><span class="mono tabular">Coef. 3</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="track-footer">
+              <strong>Débouchés :</strong> Facultés de droit, sciences politiques, journalisme, administration.
+            </p>
+          </article>
+
+          <article class="track-card" data-track-card="A">
+            <div>
+              <p class="track-meta mono tabular">Entrée au Lycée · Tronc Commun · 29 h / semaine</p>
+              <h3 class="track-name">Seconde A · Cycle de Détermination</h3>
+              <p class="track-sub">Méthodologie &amp; Orientation Progressive</p>
+              <p class="track-desc">
+                Consolidation des savoirs fondamentaux en français, mathématiques, sciences expérimentales et
+                informatique afin d’accompagner chaque élève vers son choix de série.
+              </p>
+              <div class="coef-block">
+                <p class="coef-title">Dominantes &amp; Coefficients</p>
+                <ul class="coef-list">
+                  <li><span>Mathématiques</span><span class="mono tabular">Coef. 3</span></li>
+                  <li><span>Français</span><span class="mono tabular">Coef. 3</span></li>
+                  <li><span>Physique-Chimie &amp; SVT</span><span class="mono tabular">Coef. 2 · 2</span></li>
+                  <li><span>Informatique &amp; Méthodologie</span><span class="mono tabular">Coef. 2</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="track-footer">
+              <strong>Débouchés :</strong> Orientation vers les séries S1, L2 ou filières technologiques.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · INFRASTRUCTURES -->
+    <section id="infrastructures" class="section-surface section-border">
+      <div class="container section-pad">
+        <div class="section-header">
+          <p class="kicker">03 · Cadre d’Étude &amp; Équipements</p>
+          <h2 class="section-title">Des espaces conçus pour la concentration et l’expérimentation.</h2>
+        </div>
+
+        <div class="infra-grid">
+          <figure class="media-figure">
+            <div class="media-frame ratio-4-3">
+              <img
+                src="./assets/lab_sciences.jpg"
+                alt="Laboratoire de Physique-Chimie du Lycée Prosper Kamara"
+              />
+            </div>
+            <figcaption class="infra-caption">
+              <h3>Laboratoires de Sciences Expérimentales</h3>
+              <p>
+                Paillasses équipées en optique, chimie analytique et biologie cellulaire pour les travaux pratiques
+                hebdomadaires des séries S1 et Seconde.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure class="media-figure">
+            <div class="media-frame ratio-4-3">
+              <img
+                src="./assets/biblio_etude.jpg"
+                alt="Bibliothèque académique et salle d'étude du lycée"
+              />
+            </div>
+            <figcaption class="infra-caption">
+              <h3>Bibliothèque &amp; Salle d’Étude</h3>
+              <p>
+                Fonds documentaire classique et scientifique, accès aux annales préparatoires au baccalauréat et
+                études dirigées encadrées en fin de journée.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · VIE SCOLAIRE & PORTAIL INTERACTIF -->
+    <section id="vie-scolaire" class="section-border">
+      <div class="container section-pad">
+        <div class="section-head-row">
+          <div>
+            <p class="kicker">04 · Vie Scolaire &amp; Dates Clés</p>
+            <h2 class="section-title">Communiqués officiels et échéances de l’établissement.</h2>
+          </div>
+          <a href="../?portail=login" class="inline-link strong-link">
+            Consulter mes bulletins &amp; devoirs personnels →
+          </a>
+        </div>
+
+        <div class="split-2">
+          <div>
+            <h3 class="col-label">Notes d’information publiques</h3>
+            <div class="feed-list" id="announcements-list">
+              <article class="feed-item">
+                <p class="mono tabular feed-date">22 nov. 2026 · Direction</p>
+                <h4>Calendrier des conseils de classe Trimestre 1</h4>
+                <p>
+                  Les conseils de classe se tiendront du 7 au 12 décembre 2026 en salle des professeurs avant la
+                  remise officielle des bulletins.
+                </p>
+              </article>
+              <article class="feed-item">
+                <p class="mono tabular feed-date">18 nov. 2026 · Secrétariat</p>
+                <h4>Permanences d’accueil des familles</h4>
+                <p>Le secrétariat et la direction reçoivent les parents d’élèves du lundi au vendredi de 08h00 à 16h00.</p>
+              </article>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="col-label">Échéances officielles du trimestre</h3>
+            <div class="feed-list" id="calendar-list">
+              <div class="event-row">
+                <div>
+                  <h4>Conseils de classe · Trimestre 1</h4>
+                  <p>Bilan pédagogique de fin de premier trimestre.</p>
+                </div>
+                <span class="mono tabular event-date">07 déc. — 12 déc. 2026</span>
+              </div>
+              <div class="event-row">
+                <div>
+                  <h4>Remise officielle des bulletins</h4>
+                  <p>Publication sur l’espace interactif et retrait au secrétariat.</p>
+                </div>
+                <span class="mono tabular event-date">15 déc. — 16 déc. 2026</span>
+              </div>
+              <div class="event-row">
+                <div>
+                  <h4>Congés de Noël &amp; Fin d’année</h4>
+                  <p>Reprise des cours le lundi 4 janvier 2027.</p>
+                </div>
+                <span class="mono tabular event-date">19 déc. 2026 — 03 jan. 2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portal-bridge">
+          <div>
+            <p class="kicker">Portail Numérique Sécurisé (Partie Interactive)</p>
+            <h3 class="bridge-title">Vous êtes élève, parent, enseignant ou membre du personnel ?</h3>
+            <p class="bridge-desc">
+              Connectez-vous pour accéder aux notes détaillées, bulletins officiels signés, cahiers de textes,
+              réclamations, paiements et messagerie interne — ou déposez une demande d’inscription en ligne.
+            </p>
+          </div>
+          <div class="bridge-actions">
+            <a href="../?portail=login" class="btn-primary">Se connecter</a>
+            <a href="../?portail=register" class="btn-secondary">Créer un compte Élève / Parent</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · CONTACT PUBLIC -->
+    <section id="contact" class="section-surface section-border">
+      <div class="container section-pad">
+        <div class="split-12">
+          <div class="col-5">
+            <p class="kicker">05 · Admissions &amp; Contact Public</p>
+            <h2 class="section-title">Prendre rendez-vous ou demander une brochure.</h2>
+            <p class="contact-intro">
+              Laissez un message au secrétariat sans créer de compte. Pour une pré-inscription officielle élève ou
+              parent, utilisez directement le formulaire du portail interactif.
+            </p>
+
+            <ul class="contact-details">
+              <li><strong>Adresse :</strong> <span id="contact-address">Avenue Prosper Kamara, Quartier Administratif, Bamako</span></li>
+              <li><strong>Téléphone :</strong> <span id="contact-phone" class="mono tabular">+223 20 22 45 80</span></li>
+              <li><strong>E-mail :</strong> <span id="contact-email">direction@lycee-prosper-kamara.edu</span></li>
+            </ul>
+          </div>
+
+          <div class="col-7">
+            <form class="contact-form" id="contact-form">
+              <h3>Demande d’information auprès du secrétariat</h3>
+              <div id="contact-feedback" class="form-feedback" hidden></div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="c-nom">Nom et prénom</label>
+                  <input id="c-nom" name="nom" type="text" required placeholder="Ex. Mme Fatoumata Sidibé" />
+                </div>
+                <div class="field">
+                  <label for="c-contact">Téléphone ou adresse e-mail</label>
+                  <input id="c-contact" name="contact" type="text" required placeholder="+223 70 00 00 00" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="c-profil">Vous êtes</label>
+                <select id="c-profil" name="profil">
+                  <option value="parent">Parent d’élève / Tuteur légal</option>
+                  <option value="eleve">Futur élève</option>
+                  <option value="visiteur">Visiteur / Partenaire institutionnel</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="c-message">Votre message</label>
+                <textarea
+                  id="c-message"
+                  name="message"
+                  rows="3"
+                  required
+                  placeholder="Classe souhaitée, demande de rendez-vous ou question sur la scolarité..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" id="contact-submit">
+                Envoyer la demande au secrétariat
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>
+      <p class="footer-brand" id="footer-brand">LYCÉE PROSPER KAMARA</p>
+      <p class="footer-sub" id="footer-sub">Excellence · Discipline · Réussite · Avenue Prosper Kamara, Bamako</p>
+    </div>
+    <div class="footer-links">
+      <a href="../?portail=login">Connexion</a>
+      <a href="../?portail=register">Inscription</a>
+      <a href="../?portail=forgot">Mot de passe oublié</a>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

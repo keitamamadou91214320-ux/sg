@@ -1,0 +1,6 @@
+{
+  "name": "PROSPER KAMARA – GESTION SCOLAIRE",
+  "description": "Plateforme officielle de gestion scolaire du Lycée Prosper Kamara : gouvernance, évaluations, bulletins signés, comptabilité, vie scolaire et traçabilité.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
